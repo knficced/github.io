@@ -1,0 +1,73 @@
+body {
+    background: whitesmoke;
+}
+
+aside {
+  float: left;
+    background: rgba(43, 150, 226, 0.87);
+    width: 20%;
+    padding: 1%;
+    height: 100vh;
+    color: white;
+    border-right: 4px solid #0e008b;
+}
+aside img {
+  width: 45%;
+  float: left;
+}
+
+aside .logo{
+  font-size: 15px;
+  color: white;
+}
+
+aside h3{
+  position: relative;
+  font-size: 14px;
+  margin-left: 50%;
+  margin-top: 15px;
+}
+aside ul{list-style: none}
+aside ul li{
+  color: white;
+  display: block;
+  margin-top: 30px;
+  transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+  color: #00078b;
+  transform: scale(1.15);
+}
+
+main .features{
+  float: left;
+  margin-top: 45px;
+  text-align: center;
+  width: 75%;
+  margin-left: 30px;
+}
+main .features h1{font-size: 30px;margin: 30px auto; width: 55%;}
+main .features p{font-size:15px}
+main .features span{font-size:25px}
+main .features article{font-size: 15px; text-align: right;}
+
+main .panel-body{
+  float: left;
+  margin-top: 30px;
+  text-align: center;
+  width: 74%;
+  margin-left: 30px;
+}
+main .panel-body h1{font-size: 30px;margin: 30px auto; width: 55%;}
+main .panel-body p{font-size:15px}
+main .panel-body span{font-size:25px}
+main .panel-body article{font-size: 15px; text-align: right;}
+
+main .features section{text-align: left}
+
+form{
+  margin-left: 24%;
+  width: 500px;
+  margin-top: 50px;
+}

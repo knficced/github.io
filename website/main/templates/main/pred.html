@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Статьи{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h2>Статьи, используемые при решение поставленной задачи</h2>
+    <br>
+    <section><a href="{% url 'biz1' %}"><button class="btn-info">1. Bizyaev I. A., Borisov A. V., Mamaev I. S., Exotic Dynamics of Nonholonomic Roller Racer with Periodic ControlRegular and Chaotic Dynamics. --- 2018. --- Т. 23. --- №. 7 --- 8.  --- С. 983–-994.</button></a></section><br>
+    <section><a href="{% url 'biz2' %}"><button class="btn-info">2. Bizyaev I. A., Mamaev I. S. Roller Racer with varying gyrostatic momentum: acceleration criterion and strange attractors // Regular and Chaotic Dynamics. --– 2023. --- Т. 28. --- №. 1. --- С. 107--130.</button></a></section><br>
+    <section><a href="{% url 'kil3' %}"><button class="btn-info">3. Kilin A. A., Karavaev Y. L., Yefremov K. S., Experimental Investigations of the Controlled Motion of the Roller Racer Robot. ---CLAWAR 2021, 2022, --- C. 428--437.</button></a></section><br>
+    <section><a href="{% url 'yef4' %}"><button class="btn-info">4. Yefremov K. S., Ivanova T. B., Kilin A. A., Karavaev Y. L., Theoretical and experimental investigations of the controlled motion of the Roller Racer. --- 2020 International Conference Nonlinearity, Information and Robotics – IEEE, 2020, --- C. 1--5.</button></a></section><br>
+    <section><a href="{% url 'biz5' %}"><button class="btn-info">5. Bizyaev I. A., The Inertial Motion of a Roller Racer,Regular and Chaotic Dynamics, --- 2017, --- Vol. 22, --- №. 3. --- C. 239--247.</button></a></section><br>
+    <section><a href="{% url 'iv6' %}"><button class="btn-info">6. Ivanova T. B., Karavaev Y. L., Kilin A. A., Control of a pendulum-actuated spherical robot on a horizontal plane with rolling resistance, Archive of Applied Mechanics ---2022.---C. 137--150.</button></a></section>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Анализ динамики системы{% endblock %}
+
+{% block content %}
+<div class ="features">
+<h1>Анализ динамики системы с учетом вязкого трения</h1>
+<section>1. <a href="{% url 'anali' %}"><button class="btn btn-outline-primary">Общие сведения</button></a></section>
+    <br>
+<section>1.1. <a href="{% url 'dvvp' %}"><button class="btn btn-outline-success">Движение вдоль прямой</button></a></section>
+    <br>
+<p><a href="{% url 'xoty' %}"><button class="btn-outline-info">Рис. 5. График зависимости X от Y , при параметрах: α = 0.5 - амплитуда, T = 0.5 - период</button></a></p>
+<p><a href="{% url 'vota' %}"><button class="btn-outline-info">Рис. 6. График зависимости скорости от амплитуды, при параметрах: T = 0.5 - период</button></a></p>
+<section>1.2. <a href="{% url 'dvvo' %}"><button class="btn btn-outline-success">Движение вдоль окружности</button></a></section>
+<p><a href="{% url 'xotyokr' %}"><button class="btn-outline-info">Рис. 7. График зависимости X от Y</button></a></p>
+<p><a href="{% url 'votaokr' %}"><button class="btn-outline-info">Рис. 8. График зависимости скорости от амплитуды</button></a></p>
+<section>Для разных значений φ0 приведены графики зависимости координат X от Y (рис. 9). При увеличении количества выводимых на график расчетов в Maple, движение происходит по окружности (рис. 10).</section>
+    <br>
+<p><a href="{% url 'x_ot_y_okr_fi' %}"><button class="btn-outline-info">Рис. 7. График зависимости X от Y</button></a></p>
+<p><a href="{% url 'x_ot_y_okr_op' %}"><button class="btn-outline-info">Рис. 8. График зависимости скорости от амплитуды</button></a></p>
+</div>
+{% endblock %}

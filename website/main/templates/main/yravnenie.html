@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Уравнение движения{% endblock %}
+
+{% block content %}
+<div class ="features">
+    <h3>Уравнения движения</h3>
+    <p>Рассмотрим движение роллер рэйсера по плоскости (см. рис. <a href="{% url 'fig01' %}"><button class="btn-outline-info">3</button></a>).</p><br>
+    <section>В таблице 1 представлены основные обозначения величин, используемые в этой работе. <a href="{% url 'tabl' %}"><button class="btn btn-success">Таблица 1</button></a></section>
+    <section> Определим три системы координат:</section>
+    <section>— инерциальную систему координат Oxy, плоскость Oxy совпадает с плоскостью движения (рис. 3);</section>
+    <section> — неинерциальную систему координат C1x1y1, жестко связанную с первой тележкой и началом отсчета C1 в центре масс колесной пары. Оси C1x1 и C1y1 направим соответственно по касательной и нормали к плоскости колес;</section>
+    <section> — неинерциальную систему координат C2x2y2, жестко связанную с второй тележкой и началом отсчета C2 в центре масс колесной пары, оси также направим по касательной и нормали к плоскости колес.</section>
+    <br>
+    <section>1. Вывод уравнений движения</section>
+    <section><a href="{% url 'yravcv' %}"><button class="btn btn-outline-primary">1.1. Уравнения связи</button></a></section>
+    <section><a href="{% url 'kin' %}"><button class="btn btn-outline-primary">1.2. Кинетическая энергия</button></a></section>
+    <section><a href="{% url 'yravdv' %}"><button class="btn btn-outline-primary">1.3. Уравнения движения в квазикоординатах</button></a></section>
+    <section>2. Управляющая функция</section>
+     <section><a href="{% url 'yprav' %}"><button class="btn btn-outline-primary">2.1. Управляющая функция</button></a></section>
+    <a href="{% url 'fig01' %}"><button class="btn btn-warning">Рис.3. Схематическое изображение роллер рэйсера</button></a>
+</div>
+{% endblock %}
